@@ -13,9 +13,9 @@
 	<div id="mainContainer">
 		<img id="surpriseImage" src="https://media.giphy.com/media/l0HlMr2G3EKFgpUY0/giphy.gif"></img>
 		<audio id="surpriseSound" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-21014/zapsplat_sport_air_horn_soccer_blast_tune_21154.mp3"></audio>
-		<p>What is the magic word?</p>
+		<p>What is my birthday?</p>
 		<input type="text" placeholder=""></input>
-		<button onclick="getInput()">Submit</button>
+		<button id="Click me" onclick="getInput()">Submit</button>
 	</div>
 </body>
 <!------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -26,7 +26,7 @@
 		var userInput = document.querySelector('input').value;
   		console.log(userInput);
   		
-  		if (userInput == "rhetoric" || userInput == "Rhetoric") {
+  		if (userInput == "october 24th" || userInput == "October 24th") {
     			document.getElementById("surpriseImage").style.visibility = "visible";
     			document.getElementById("surpriseSound").play();
     			console.log("success")
@@ -44,6 +44,38 @@
 #surpriseImage { 
 	visibility: hidden; 
 }
+
+html {
+	background-color: #ff0066
+}
+
+#Click me {
+  background: #e6dc1e;
+  background-image: -webkit-linear-gradient(top, #e6dc1e, #91910a);
+  background-image: -moz-linear-gradient(top, #e6dc1e, #91910a);
+  background-image: -ms-linear-gradient(top, #e6dc1e, #91910a);
+  background-image: -o-linear-gradient(top, #e6dc1e, #91910a);
+  background-image: linear-gradient(to bottom, #e6dc1e, #91910a);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#Click me:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
 </style>
 <!------------------------------------------------------------------------------------------------------------------------------------------------->
 
